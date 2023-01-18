@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_11_19_162833) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
@@ -79,6 +80,9 @@ ActiveRecord::Schema.define(version: 2022_11_19_162833) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_properties_on_user_id"
   end
+=======
+ActiveRecord::Schema.define(version: 2022_03_28_083817) do
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
 
   create_table "sessions", force: :cascade do |t|
     t.string "token"
@@ -96,11 +100,14 @@ ActiveRecord::Schema.define(version: 2022_11_19_162833) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+<<<<<<< HEAD
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "bookings", "properties"
   add_foreign_key "bookings", "users"
   add_foreign_key "charges", "bookings"
   add_foreign_key "properties", "users"
+=======
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
   add_foreign_key "sessions", "users"
 end

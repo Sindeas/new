@@ -16,12 +16,15 @@ gem 'webpacker', '~> 5.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+<<<<<<< HEAD
 # Use kaminari for activerecord pagination
 gem 'kaminari'
 
 # Use Stripe for receiving payments
 gem 'stripe'
 
+=======
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
 # Use jquery as the JavaScript library
 # gem 'jquery-rails', '~> 4.4'
 # Use CoffeeScript for .coffee assets and views

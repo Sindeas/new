@@ -6,11 +6,15 @@ const customConfig = {
   resolve: {
     alias: {
       '@src': path.resolve(__dirname, '..', '..', 'app/javascript/src'),
+<<<<<<< HEAD
       '@utils': path.resolve(__dirname, '..', '..', 'app/javascript/src/utils'),
+=======
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
     }
   }
 }
 
+<<<<<<< HEAD
 const webpack = require('webpack')
 
 environment.plugins.prepend(
@@ -35,6 +39,8 @@ environment.plugins.prepend(
 
 );
 
+=======
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
 environment.config.merge(customConfig);
 
 environment.splitChunks()

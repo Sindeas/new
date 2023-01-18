@@ -1,8 +1,12 @@
 class User < ApplicationRecord
   has_many :sessions
+<<<<<<< HEAD
   has_many :properties
   has_many :bookings
   
+=======
+
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
   validates :username, presence: true, length: { minimum: 3, maximum: 64 }
   validates :password, presence: true, length: { minimum: 8, maximum: 64 }
   validates :email, presence: true, length: { minimum: 5, maximum: 500 }

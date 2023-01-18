@@ -10,9 +10,17 @@ module Api
           httponly: true
         }
 
+<<<<<<< HEAD
         render 'api/sessions/create', status: :created
       else
         render json: { success: false }, status: :bad_request
+=======
+        render 'api/sessions/create'
+      else
+        render json: {
+          success: false
+        }
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
       end
     end
 
@@ -22,9 +30,17 @@ module Api
 
       if session
         @user = session.user
+<<<<<<< HEAD
         render 'api/sessions/authenticated', status: :ok
       else
         render json: { authenticated: false }, status: :bad_request
+=======
+        render 'api/sessions/authenticated'
+      else
+        render json: {
+          authenticated: false
+        }
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
       end
     end
 
@@ -33,7 +49,13 @@ module Api
       session = Session.find_by(token: token)
 
       if session&.destroy
+<<<<<<< HEAD
         render json: { success: true }, status: :ok
+=======
+        render json: {
+          success: true
+        }
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
       end
     end
   end

@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+<<<<<<< HEAD
     render 'home'
   end
 
@@ -42,3 +43,7 @@ class StaticPagesController < ApplicationController
   end
 end
 
+=======
+  end
+end
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778

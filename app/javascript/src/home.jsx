@@ -1,6 +1,7 @@
 // home.jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
+<<<<<<< HEAD
 import Layout from '@src/layout';
 import { handleErrors } from '@utils/fetchHelper';
 
@@ -80,6 +81,12 @@ class Home extends React.Component {
     )
   }
 }
+=======
+
+const Home = () => (
+  <h1>Home page</h1>
+)
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(

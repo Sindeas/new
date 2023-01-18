@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   
   # Default home/index page
   root to: 'static_pages#home'
@@ -50,5 +51,15 @@ Rails.application.routes.draw do
     # stripe webhook
     post '/charges/mark_complete'              => 'charges#mark_complete'
 
+=======
+  root to: 'static_pages#home'
+
+  namespace :api do
+    # Add routes below this line
+    resources :users, only: [:create]
+    resources :sessions, only: %i[create destroy]
+
+    get '/authenticated' => 'sessions#authenticated'
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
   end
 end

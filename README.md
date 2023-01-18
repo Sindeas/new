@@ -27,6 +27,10 @@ foreman start -f Procfile.dev
 ```
 
 4. Go to "localhost:3000" on browser.
+<<<<<<< HEAD
 # new
 # new
+# new
+=======
+>>>>>>> 39c46d16aa142e15f83696bc35785e6188988778
 # new
